@@ -1,7 +1,8 @@
 /**
  * Created by wu.hong on 2016/3/22.
  */
-import {Component, Input, OnInit} from 'angular2/core';
+//import {Component, Input, OnInit} from 'angular2/core';
+import {Component, OnInit} from 'angular2/core';
 import {Hero} from './hero';
 import {RouteParams} from 'angular2/router';
 import {HeroService} from './hero.service';
@@ -14,7 +15,8 @@ import {HeroService} from './hero.service';
 })
 
 export class HeroDetailComponent implements OnInit{
-    @Input() hero: Hero;
+    //@Input() hero: Hero;//替代Component下的input: ['hero']，与template里的绑定关联，现在用route了所以不需要input
+    hero: Hero;
     constructor(
         private _heroService: HeroService,
         private _routeParams: RouteParams
