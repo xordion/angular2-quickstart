@@ -1,8 +1,8 @@
 # angular2-quickstart
 
-#npm install
+* npm install
 
-npm start - runs the compiler and a server at the same time, both in "watch mode"
+* npm start - runs the compiler and a server at the same time, both in "watch mode"
  
 npm run tsc - runs the TypeScript compiler once
  
